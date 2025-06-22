@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php
+$name = "KHELEGA Tournaments";
+$download = "https://upload.app/download/khelega-free-fire/com.usera.user/a074a4c4bba0990ac92093437d40e21835f4a9789abe2eeb6a4a11d25a4f84dd";
+$logo = "https://i.supaimg.com/28093b3c-b63a-417c-ba4f-aa3ca5ae5b69.jpg"
+$telegram = "https://t.me/Riyadbd71";
+?>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $name; ?> || Free Fire & Ludo Tournament App</title>
+    <link rel="icon" type="image/x-icon" href="<?php echo $logo;?>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#FF6B00',
+                secondary: '#FFD700',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .game-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .tournament-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #FF6B00;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Header with Hero Section -->
+    <header id="home" class="relative overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 class="w-full h-full object-cover" alt="Gaming Background">
+        </div>
+        
+        <div class="container mx-auto px-5 py-5 relative z-10">
+            <div class="flex flex-wrap items-center justify-between">
+                <a href="#" class="flex items-center">
+                    <img src="<?php echo $logo;?>" height="50px" width="50px" class="rounded-lg">
+                    <span class="ml-3 text-2xl font-bold"><?php echo $name; ?></span>
+                </a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-primary transition">Features</a>
+                    <a href="#tournaments" class="hover:text-primary transition">Tournaments</a>
+                    <a href="#download" class="hover:text-primary transition">Download</a>
+                </nav>
+                
+                <a href="<?php echo $telegram; ?>" class="hidden md:inline-flex items-center bg-primary text-white border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-lg text-lg font-medium transition">
+                    Support
+                </a>
+            </div>
+        </div>
+        
+        <section class="relative z-10">
+            <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
+                <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="title-font sm:text-5xl text-4xl mb-8 font-extrabold">
+                        <span class="text-primary">Free Fire</span> & <span class="text-secondary">Ludo</span><br>
+                        একই অ্যাপে টুর্নামেন্ট
+                    </h1>
+                    <p class="mb-8 leading-relaxed text-lg">
+                        প্রতিদিন হাজারো টাকা জিতুন ফ্রি ফায়ার ও লুডু টুর্নামেন্টে। 
+                        বিশ্বস্ত প্ল্যাটফর্মে অংশগ্রহণ করুন এবং বড় পুরস্কার জিতুন!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                        <a href="<?php echo $download; ?>" class="flex-1">
+                            <button class="w-full flex items-center justify-center text-white bg-primary border-0 py-4 px-8 focus:outline-none hover:bg-orange-600 rounded-lg text-lg font-bold shadow-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                                Download App
+                            </button>
+                        </a>
+                        <a href="<?php echo $telegram; ?>" class="flex-1">
+                            <button class="w-full flex items-center justify-center text-white bg-blue-500 border-0 py-4 px-8 focus:outline-none hover:bg-blue-600 rounded-lg text-lg font-bold shadow-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.25 0-.53.06-.83.16-.5.17-1.67.59-4.12 2.32-.53.38-.96.72-1.12.89-.25.32-.19.7-.09.95.1.24.33.54.69.45.28-.07.66-.31 1.12-.59 3.19-1.99 4.9-2.89 5.33-3.02.51-.16.82-.4.82-.79 0-.3-.27-.56-.8-.56z"/>
+                                </svg>
+                                Telegram
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 relative">
+                    <div class="relative">
+                        <img class="object-cover object-center rounded-xl shadow-2xl border-4 border-primary" 
+                             src="https://i.supaimg.com/a03ec681-e9c8-48c7-b1ef-7e8981fd6d10.jpg" 
+                             alt="App Preview">
+                        <div class="absolute -bottom-5 -left-5 bg-white text-gray-900 py-2 px-4 rounded-lg shadow-lg font-bold">
+                            Free Fire
+                        </div>
+                        <div class="absolute -bottom-5 -right-5 bg-white text-gray-900 py-2 px-4 rounded-lg shadow-lg font-bold">
+                            Ludo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Tournament Types Section -->
+    <section id="tournaments" class="text-gray-300 body-font bg-gray-800 py-20">
+        <div class="container px-5 mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="sm:text-4xl text-3xl font-bold title-font mb-4">আমাদের টুর্নামেন্ট সমূহ</h2>
+                <p class="text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">একই অ্যাপে দুই ধরনের টুর্নামেন্টে অংশগ্রহণ করুন</p>
+            </div>
+            
+            <div class="flex flex-wrap -m-4">
+                <!-- Free Fire Tournament -->
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="game-card h-full p-8 rounded-xl relative overflow-hidden">
+                        <div class="tournament-badge">FF</div>
+                        <div class="flex items-center mb-6">
+                            <img src="https://logos-world.net/wp-content/uploads/2021/02/Free-Fire-Logo.png" 
+                                 class="w-16 h-16 object-contain mr-4" alt="Free Fire">
+                            <h2 class="text-2xl font-bold">ফ্রি ফায়ার টুর্নামেন্ট</h2>
+                        </div>
+                        <p class="mb-6">দল বেঁধে অংশগ্রহণ করুন এবং বড় অঙ্কের পুরস্কার জিতুন। প্রতিদিন ১০+ টুর্নামেন্ট!</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm">Solo</span>
+                            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm">Duo</span>
+                            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm">Squad</span>
+                            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm">Custom</span>
+                        </div>
+                        <a href="<?php echo $download; ?>" class="inline-flex items-center text-primary font-medium">
+                            Join Tournament
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ludo Tournament -->
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="game-card h-full p-8 rounded-xl relative overflow-hidden">
+                        <div class="tournament-badge">LD</div>
+                        <div class="flex items-center mb-6">
+                            <img src="https://play-lh.googleusercontent.com/JRaB8h2r8mN1vJqXwpX9LdjY0Ya1rQqo6YhG1Wg5x8h7p7Z5eA3J5ZJ5w5Z5Z5Z5Z5Z5Q" 
+                                 class="w-16 h-16 object-contain mr-4" alt="Ludo">
+                            <h2 class="text-2xl font-bold">লুডু টুর্নামেন্ট</h2>
+                        </div>
+                        <p class="mb-6">ক্লাসিক লুডু গেম খেলে টাকা জিতুন। সহজ নিয়ম, দ্রুত অর্থ উত্তোলন। প্রতিদিন ২০+ টুর্নামেন্ট!</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm">Quick Match</span>
+                            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm">Tournament</span>
+                            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm">1v1</span>
+                            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm">4 Players</span>
+                        </div>
+                        <a href="<?php echo $download; ?>" class="inline-flex items-center text-primary font-medium">
+                            Join Tournament
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unified Platform Features -->
+    <section id="features" class="text-gray-300 body-font bg-gray-900 py-20">
+        <div class="container px-5 mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="sm:text-4xl text-3xl font-bold title-font mb-4">একই অ্যাপে দুই টুর্নামেন্ট</h2>
+                <p class="text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">কেন আমাদের প্ল্যাটফর্ম বেছে নিবেন?</p>
+            </div>
+            
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3 w-full">
+                    <div class="game-card h-full p-8 rounded-xl">
+                        <div class="w-16 h-16 inline-flex items-center justify-center rounded-full bg-primary bg-opacity-10 text-primary mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-white mb-4">সুরক্ষিত গেমিং</h2>
+                        <p class="leading-relaxed">এন্টি-চিট সিস্টেম এবং ফেয়ার প্লে নিশ্চিত করে সবাইকে সমান সুযোগ প্রদান করা হয়।</p>
+                    </div>
+                </div>
+                
+                <div class="p-4 md:w-1/3 w-full">
+                    <div class="game-card h-full p-8 rounded-xl">
+                        <div class="w-16 h-16 inline-flex items-center justify-center rounded-full bg-primary bg-opacity-10 text-primary mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-white mb-4">দ্রুত উত্তোলন</h2>
+                        <p class="leading-relaxed">টুর্নামেন্ট জেতার পর ২৪ ঘন্টার মধ্যে আপনার পুরস্কার উত্তোলন করুন।</p>
+                    </div>
+                </div>
+                
+                <div class="p-4 md:w-1/3 w-full">
+                    <div class="game-card h-full p-8 rounded-xl">
+                        <div class="w-16 h-16 inline-flex items-center justify-center rounded-full bg-primary bg-opacity-10 text-primary mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-white mb-4">২৪/৭ সাপোর্ট</h2>
+                        <p class="leading-relaxed">আমাদের বিশেষজ্ঞ টিম সবসময় প্রস্তুত আপনার যেকোনো সমস্যা সমাধানের জন্য।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="text-gray-300 body-font bg-gray-800 py-20">
+        <div class="container px-5 mx-auto">
+            <div class="flex flex-wrap -m-4 text-center">
+                <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
+                    <div class="game-card px-4 py-6 rounded-lg">
+                        <h2 class="title-font font-medium text-5xl text-white mb-2">5K+</h2>
+                        <p class="leading-relaxed">সক্রিয় খেলোয়াড়</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
+                    <div class="game-card px-4 py-6 rounded-lg">
+                        <h2 class="title-font font-medium text-5xl text-white mb-2">50+</h2>
+                        <p class="leading-relaxed">দৈনিক টুর্নামেন্ট</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
+                    <div class="game-card px-4 py-6 rounded-lg">
+                        <h2 class="title-font font-medium text-5xl text-white mb-2">2M+</h2>
+                        <p class="leading-relaxed">পুরস্কার বিতরণ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section id="download" class="text-gray-300 body-font bg-gradient-to-r from-primary to-orange-700 py-20">
+        <div class="container px-5 mx-auto">
+            <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+                <div class="flex-grow sm:text-left text-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">এখনই ডাউনলোড করুন!</h2>
+                    <p class="leading-relaxed text-lg mb-6">একই অ্যাপে ফ্রি ফায়ার ও লুডু টুর্নামেন্টের সুবিধা উপভোগ করুন</p>
+                </div>
+                <a href="<?php echo $download; ?>" class="flex-shrink-0">
+                    <button class="flex items-center justify-center text-white bg-black bg-opacity-30 border-0 py-4 px-8 focus:outline-none hover:bg-opacity-40 rounded-lg text-lg font-bold shadow-lg transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Download Now
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a href="#" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <img src="<?php echo $logo;?>" height="40px" width="40px" class="rounded-lg">
+                <span class="ml-3 text-xl"><?php echo $name; ?></span>
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+                © 2025 <?php echo $name; ?> — Developed by <a href="<?php echo $telegram; ?>" class="text-gray-300 ml-1">RAIM</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="<?php echo $telegram; ?>" class="text-gray-400 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.25 0-.53.06-.83.16-.5.17-1.67.59-4.12 2.32-.53.38-.96.72-1.12.89-.25.32-.19.7-.09.95.1.24.33.54.69.45.28-.07.66-.31 1.12-.59 3.19-1.99 4.9-2.89 5.33-3.02.51-.16.82-.4.82-.79 0-.3-.27-.56-.8-.56z"/>
+                    </svg>
+                </a>
+                <a href="#home" class="ml-4 text-gray-400 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
